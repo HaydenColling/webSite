@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hayden Colling</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+</head>
+
+	<div class="nav-wrapper">
+					<div class="dots-wrapper">
+						<div id="dot-1"class="browser-dot">
+							
+						</div>
+						<div id="dot-2"class="browser-dot">
+							
+						</div>
+						<div id="dot-3"class="browser-dot">
+							
+						</div>
+					</div>
+					<ul id="navigation">
+						<li> <a target="_blank" href="https://www.linkedin.com/in/haydencolling/"> Contact </a></li>
+					</ul>
+				</div>
+
+	<body>
+		<div class="main-container">
+			<h3 style="text-align: center;"> Automated Nmap Scan</h3>
+			<p style="text-align: center;">
+			The idea of this project was to get some exposure to how to use and set up SIEMs. I decided to set up a
+			free version of Splunk in my home lab. First, I created two Virtual Machines on my Proxmox server. Both
+			virtual machines will be using Ubuntu. On my first server, I downloaded the enterprise version of Splunk.
+			To monitor data from another machine, I needed to set up a forwarder. Now switching to the other
+			virtual machine, I was able to download the Splunk Universal Forwarder. I needed to point the
+			Forwarder to the Splunk server. <br><img src="images\SplunkSetUp\addForwarderServer.png"><br>In my case, I wanted to monitor the Auth.log file. So, I added a
+			monitor on the specific file path. <br><img src="images\SplunkSetUp\addMonitor.png"> <br>Now we can see Splunk is monitoring all actions in Auth.log.
+			<br><img src="images\SplunkSetUp\result.png">
+			</p>
+		</div>
+
+
+	</body>
+
+</html>
