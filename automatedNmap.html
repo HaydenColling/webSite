@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hayden Colling</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+</head>
+
+	<div class="nav-wrapper">
+					<div class="dots-wrapper">
+						<div id="dot-1"class="browser-dot">
+							
+						</div>
+						<div id="dot-2"class="browser-dot">
+							
+						</div>
+						<div id="dot-3"class="browser-dot">
+							
+						</div>
+					</div>
+					<ul id="navigation">
+						<li> <a target="_blank" href="https://www.linkedin.com/in/haydencolling/"> Contact </a></li>
+					</ul>
+				</div>
+
+	<body>
+		<div class="main-container">
+			<h3 style="text-align: center;"> Automated Nmap Scan</h3>
+			<p style="text-align: center;">
+			For this project, I wanted to make a script that would constantly run a Nmap scan on all the devices on
+			my network. Firstly, I imported the Nmap library. We ask the user for four different scan options. Scan
+			once, scan and email results, continuous scan, and finally a deep scan. 
+			<br><img src="images\automatedNmap\options.png">
+			<br><br>We then use a scanner to scan
+			the network. For my purpose, I have a subnet network range of /24 so in my scanner, I input
+			192.168.1.0/24. This lets the scanner know what network to scan. Then you give the arguments of
+			what type of scan this is. In my case it is a simple ping sweep, therefore the arguments would be "-sn". If
+			the user chooses to email the results, we use the smtplib library. In my case, I used gmails API key in
+			order to send the results.<br><img src="images\automatedNmap\scanResults.png"> <img src="images\automatedNmap\emailResults.png">
+			<br><br>
+			For the deep scan, the user is able to input a single IP address or multiple. We
+			use the scanner instead of the simple "-sn" ping sweep argument. It will use the "-A" argument to see
+			any information it can acquire. All the information is stored in a dictionary. You can find the
+			documentation here <a target="_blank" href="https://pypi.org/project/python-nmap/">Link </a>. For my purpose, I output the hostname, OS, OS accuracy, OS family, type,
+			and open ports. <img src="images\automatedNmap\deepScanResults.png">
+			</p>
+		</div>
+
+
+	</body>
+
+</html>
