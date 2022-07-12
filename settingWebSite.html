@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hayden Colling</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+</head>
+
+	<div class="nav-wrapper">
+					<div class="dots-wrapper">
+						<div id="dot-1"class="browser-dot">
+							
+						</div>
+						<div id="dot-2"class="browser-dot">
+							
+						</div>
+						<div id="dot-3"class="browser-dot">
+							
+						</div>
+					</div>
+					<ul id="navigation">
+						<li> <a target="_blank" href="https://www.linkedin.com/in/haydencolling/"> Contact </a></li>
+					</ul>
+				</div>
+
+	<body>
+		<div class="main-container">
+			<h3 style="text-align: center;"> Setting Up Website</h3>
+			<p style="text-align: center;">
+			This website that you are currently on is hosted in Azure. I will show you how I set it up and created a custom domain. Firstly navigate to the Azure Portal. Continue to the Static Web App section. For my purpose of this website, a static website is all I need. You will need to create a Static Web App. I attached the website to a created Subscription and Resource Group that I have designated for this website. For my Deployment, I chose to link the web app to my GitHub account.<br><br><img src="images\setWebSite\createGit.png"><br><br>As easy as that you have set up a website. I wanted to create a custom domain and not have a funky link they give out.  <br><br><img src="images\setWebSite\orginalAddress.png"><br><br>I went to Namecheap and bought this domain that you are currently on haydencyber.info. Now that I have the domain, I had to link the web app to my domain. Navigating to the Custom domains tab. Click Add, and generate a TXT Record. Once generated copy the Value that is given and add the value to your custom domain. <br><br><img src="images\setWebSite\TXTRecord.png"><br><br>Once Azure verifies that you own the domain, you can begin to create CNAME records. Once again create another record on Azure, but this time a CNAME with the desired host. On your domain provider add another record with the same host and link the value to the desired URL.<br><br> Once done your domains setting should look like this. <br><br><img src="images\setWebSite\fullDNSRecAzure.png"><br><br><img src="images\setWebSite\fullDNSRecNameCheap.png"><br><br><br><br> <a target="_blank"href="https://docs.microsoft.com/en-us/azure/static-web-apps/custom-domain"> <h4>Helpful Microsoft Documentation</h4> </a>
+			</p>
+		</div>
+
+	</body>
+
+</html>
