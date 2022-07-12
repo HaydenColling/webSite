@@ -298,14 +298,10 @@ h6{ font-size: 16px; }
 	font-size: 14px;
 }
 
-.input-field{
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: var(--secondaryColor);
-	border-radius: 5px;
-	border: 1px solid var(--borderColor);
-	font-size: 14px;
+.past-projects{
+	display: flex;
+	margin-left: 50px;
+	justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1200px){
